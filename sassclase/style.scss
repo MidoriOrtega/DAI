@@ -1,0 +1,23 @@
+$color-principal: #d35400;
+$color-secundario: #2c3e50;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+h1 {
+    color: $color-principal;
+}
+
+a:link, a:visited {
+    color: $color-secundario;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+a:hover, a:active {
+    border-bottom: 2px solid #ff6a00;
+}

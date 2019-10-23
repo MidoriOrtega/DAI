@@ -1,0 +1,17 @@
+﻿<Window x:Class="Convertidor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Convertidor"
+        mc:Ignorable="d"
+        Title="Convertidor" Height="240" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="lblCentrigrados" Content="Centígrados" HorizontalAlignment="Left" Margin="27,32,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Label x:Name="lblFahrenheit" Content="Fahrenheit" HorizontalAlignment="Left" Margin="27,83,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <TextBox x:Name="txtCentigrados" HorizontalAlignment="Left" Height="23" Margin="141,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewTextInput="TxtCentigrados_PreviewTextInput"/>
+        <TextBox x:Name="txtFahrenheit" HorizontalAlignment="Left" Height="23" Margin="141,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" PreviewTextInput="TxtFahrenheit_PreviewTextInput"/>
+        <Button x:Name="bttCalcular" Content="Calcular" HorizontalAlignment="Left" Margin="186,155,0,0" VerticalAlignment="Top" Width="75" Click="BttCalcular_Click"/>
+
+    </Grid>
+</Window>
