@@ -20,7 +20,7 @@
             <br />
             <asp:Label ID="lblAlumno" runat="server" Text="Alumno:"></asp:Label>
 &nbsp;
-            <asp:DropDownList ID="ddlAlumno" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="ddlAlumno" runat="server" OnSelectedIndexChanged="ddlAlumno_SelectedIndexChanged"></asp:DropDownList>
             <br />
             <br />
             <asp:Label ID="lblCorreo" runat="server" Text="Correro electrónico:"></asp:Label>

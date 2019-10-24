@@ -27,6 +27,24 @@ namespace EjercicioPaginaWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+               
+                OdbcConnection miConexion = conectarBD();
+                if (miConexion != null)
+                {
+                    String query = String.Format("select datosAlumnos18.nombre from datosAlumnos18");
+                    OdbcCommand cmd = new OdbcCommand(query, miConexion);
+                    OdbcDataReader rd = cmd.ExecuteReader();
+                    ddlAlumnos.Items.Clear();
+                    while (rd.Read())
+                    {
+                        ddlAlumnos.Items.Add(rd.GetString(0));
+                    }
+                    rd.Close();
+                    miConexion.Close();
+                }
+            }
 
         }
 
